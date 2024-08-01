@@ -1,0 +1,39 @@
+getgenv().Private = {
+    Load = { 
+        ['Intro'] = true, 
+        ['IntroID'] = "rbxassetid://18512288865",
+        ['Delay'] = 0.5
+    },
+
+    Bullet_Redirection = { -- // Only Works With Wave , Electron [ Uses HIT ]
+        ['Enabled'] = true, 
+        ['HitChance'] = 100,
+        ['ClosestPart'] = true,
+        ['Prediction'] = {
+            ['Automatic'] = true,
+            ['Prediction'] = { 0.11120, 0.11120, 0.11120 } -- // Pred X , Pred Y , Pred Z
+        },
+        ['Drawings'] = {
+            ['Field Of View'] = {
+                ['Visible'] = false,
+                ['Radius'] = 125,
+                ['Filled'] = false,
+                ['Thickness'] = 1,
+                ['Transparency'] = 0.25,
+                ['Color'] = Color3.fromRGB(0, 0, 0)
+            },
+            ['Tracer'] = {
+                ['Visible'] = false,
+                ['Thickness'] = 1,
+                ['Transparency'] = 1,
+                ['Color'] = Color3.fromRGB(255, 255, 255)
+            },
+        },
+        ['Conditions'] = {
+            ['Wall'] = true,
+            ['Knocked'] = true,
+            ['Grabbed'] = true,
+            ['Tool Equipped'] = false,
+        }
+    },
+}
