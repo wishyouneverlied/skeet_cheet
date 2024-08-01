@@ -1,3 +1,4 @@
+script_key="keyhere";
 getgenv().Private = {
     Load = { 
         ['Intro'] = true, 
